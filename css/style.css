@@ -21,7 +21,7 @@ html, body {
 
 body {
   font-size: 100%;
-  font-family: "Oswald", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   background-color: #2e2d32;
 }
 
@@ -57,6 +57,7 @@ Main components
   position: relative;
   height: 100%;
   overflow: hidden;
+  background-color: #3a393f;
   /* slightly visible only when we resize this element */
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.8);
   z-index: 1;
@@ -86,7 +87,7 @@ Main components
 #cd-intro {
   position: relative;
   height: 100%;
-  background: url("../img/bg-img-01.jpg") no-repeat center center;
+  background: url("../img/bg-img.jpg") no-repeat center center;
   background-size: cover;
 }
 #cd-intro h1 {
@@ -115,14 +116,6 @@ Main components
     font-size: 130px;
     font-size: 8.125rem;
   }
-}
-
-#cd-intro h1 span{
-  display: block;
-  font-size: 70px;
-  font-size: 4.375rem;
-  font-weight: 300;
-  letter-spacing: 4px;
 }
 .no-js #cd-intro {
   height: 640px;
@@ -153,7 +146,10 @@ Main components
   left: 0;
   width: 100%;
   height: 100%;
-  background: #2e2d32;
+  background: url("../img/bg-img.jpg") no-repeat center center;
+  background-size: cover;
+  -webkit-filter: blur(4px);
+  filter: blur(4px);
 }
 .no-js .cd-blurred-bg {
   display: none;
@@ -253,7 +249,7 @@ Main components
   left: 0;
   width: 100%;
   height: 100%;
-  background: #2e2d32;
+  background: #eeecf5;
   /* Force Hardware Acceleration in WebKit */
   -webkit-transform: translateZ(0);
   -webkit-backface-visibility: hidden;
@@ -282,12 +278,11 @@ Main components
   display: block;
   padding: 0 10%;
   height: 100%;
-  color: white;
+  border-bottom: 1px solid #dfdbec;
+  color: #3a393f;
   font-size: 20px;
   font-size: 1.25rem;
   font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 0;
 }
 #main-nav li a span {
   position: absolute;
@@ -302,8 +297,7 @@ Main components
   transform: translateX(-50%) translateY(-50%);
 }
 .no-touch #main-nav li a:hover {
-  background-color: whitesmoke;
-  color: #2e2d32;
+  background-color: #FFF;
 }
 #main-nav li:last-child a {
   border-bottom: none;
@@ -315,7 +309,7 @@ Main components
   display: inline-block;
   width: 40px;
   height: 40px;
-  background: #2e2d32;
+  background-color: #d26c64;
   /* image replacement */
   overflow: hidden;
   text-indent: 100%;
