@@ -21,7 +21,7 @@ html, body {
 
 body {
   font-size: 100%;
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Oswald", sans-serif;
   background-color: #2e2d32;
 }
 
@@ -57,7 +57,6 @@ Main components
   position: relative;
   height: 100%;
   overflow: hidden;
-  background-color: #3a393f;
   /* slightly visible only when we resize this element */
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.8);
   z-index: 1;
@@ -87,6 +86,8 @@ Main components
 #cd-intro {
   position: relative;
   height: 100%;
+  background: url("../img/bg-img-01.jpg") no-repeat center center;
+  background-size: cover;
 }
 #cd-intro h1 {
   font-family: 'Oswald', sans-serif;
@@ -152,6 +153,7 @@ Main components
   left: 0;
   width: 100%;
   height: 100%;
+  background: #2e2d32;
 }
 .no-js .cd-blurred-bg {
   display: none;
@@ -251,7 +253,7 @@ Main components
   left: 0;
   width: 100%;
   height: 100%;
-  background: #eeecf5;
+  background: #2e2d32;
   /* Force Hardware Acceleration in WebKit */
   -webkit-transform: translateZ(0);
   -webkit-backface-visibility: hidden;
@@ -280,11 +282,12 @@ Main components
   display: block;
   padding: 0 10%;
   height: 100%;
-  border-bottom: 1px solid #dfdbec;
-  color: #3a393f;
+  color: white;
   font-size: 20px;
   font-size: 1.25rem;
   font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0;
 }
 #main-nav li a span {
   position: absolute;
@@ -299,7 +302,8 @@ Main components
   transform: translateX(-50%) translateY(-50%);
 }
 .no-touch #main-nav li a:hover {
-  background-color: #FFF;
+  background-color: whitesmoke;
+  color: #2e2d32;
 }
 #main-nav li:last-child a {
   border-bottom: none;
@@ -311,7 +315,7 @@ Main components
   display: inline-block;
   width: 40px;
   height: 40px;
-  background-color: #d26c64;
+  background: #2e2d32;
   /* image replacement */
   overflow: hidden;
   text-indent: 100%;
